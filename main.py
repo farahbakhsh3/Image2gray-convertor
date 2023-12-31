@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 # Gray =  0.299*Red + 0.587*Green + 0.114*Blue
 # Gray -> R G B 
-pic_colored = imread('D:/My Prog/Python/color_convert/1.jpg')
+pic_colored = imread('1.jpg')
 pic_colored = pic_colored.astype('float')
 pic_colored /= 255
 print(f"Size of original image: {pic_colored.shape}")
@@ -27,4 +27,4 @@ for r in range(row_gray):
         pic_gray[r, c] = gray
 ===
 imshow(pic_gray)
-plt.imsave('D:/My Prog/Python/color_convert/1_gray.png', pic_gray, cmap='gray')
+plt.imsave('1_gray.png', pic_gray, cmap='gray')
